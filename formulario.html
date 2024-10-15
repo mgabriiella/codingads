@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Gabriella</title>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header fixo com navegação -->
+    <nav id="menuGabriella" class="navbar-expand-lg fixed-top">
+        <div class="container d-flex justify-content-center">
+            <a class="menuGabriella mx-2" href="index.html">Maria Gabriella</a>
+            <a class="menuGabriella mx-2" href="index.html">Sobre</a>
+            <a class="menuGabriella mx-2" href="index.html">Formação Acadêmica</a>
+            <a class="menuGabriella mx-2" href="index.html">Experiência Profissional</a>
+            <a class="menuGabriella mx-2" href="index.html">Tecnologias</a>
+            <a class="menuGabriella mx-2" href="formulario.html">Contato</a>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div class="container mt-5">
+            <h1 class="text-center">Formulário de Freelancer</h1>
+            <form id="curriculoForm" class="form-container">
+                <fieldset class="border p-4">
+                    <legend class="w-auto">Informações Pessoais</legend>
+    
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" class="form-control" id="nome" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" class="form-control" id="sobrenome" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" class="form-control" id="telefone" placeholder="(xx) xxxxx-xxxx" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="lingua">Língua aplicada no serviço:</label>
+                        <select class="form-control" id="lingua" required>
+                            <option value="">Selecione</option>
+                            <option value="ingles">Inglês</option>
+                            <option value="portugues">Português (pt-BR)</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="upload">Upload do protótipo:</label>
+                        <input type="file" class="form-control-file" id="upload" accept=".pdf, .doc, .docx, .jpeg, .png" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label>Linguagens preferidas:</label><br>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="linguagem1" value="python">
+                            <label class="form-check-label" for="linguagem1">Python</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="linguagem2" value="javascript">
+                            <label class="form-check-label" for="linguagem2">JavaScript</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="linguagem3" value="java">
+                            <label class="form-check-label" for="linguagem3">Java</label>
+                        </div>
+                    </div>
+    
+                    <div class="form-group">
+                        <label>Tipo de banco de dados recomendado:</label><br>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="banco" id="banco1" value="sql" required>
+                            <label class="form-check-label" for="banco1">SQL</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="banco" id="banco2" value="nosql" required>
+                            <label class="form-check-label" for="banco2">NoSQL</label>
+                        </div>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="turno">Turno de preferência para reuniões:</label>
+                        <select class="form-control" id="turno" required>
+                            <option value="">Selecione</option>
+                            <option value="manha">Manhã</option>
+                            <option value="tarde">Tarde</option>
+                            <option value="noite">Noite</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="horario">Melhor horário sugerido para reuniões:</label>
+                        <input type="time" class="form-control" id="horario" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="dataEntrega">Previsão de entrega desejada:</label>
+                        <input type="date" class="form-control" id="dataEntrega" required>
+                    </div>
+    
+                    <button type="button" class="btn btn-secondary" onclick="limparFormulario()">Limpar</button>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="endereco" class="container-sm margin">
+    <h2>Endereço/Contato:</h2>
+    <div class="card topBcgContato my-2"></div>
+    <address>
+        Desenvolvido: <a href="mailto:mariagabriellasilvaacala@gmail.com">Maria Gabriella</a>.<br>
+        Visite: <a href="https://www.linkedin.com/in/maria-gabriella-a8a2a3211" target="_blank">LinkedIn</a><br>Recife, PE – Brasil
+    </address>
+</div>
+</div>
+
+<footer id="bcgFooter">
+<span>2024 Maria Gabriella. Todos os direitos reservados.</span>
+</footer>
+</body>
+
+
+    
+</body>
+</html>
